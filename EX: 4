@@ -8,7 +8,6 @@ def verificar_primo(numero):
         i += 1
     return True
 
-# Exemplo de utilização
 num = int(input("Digite um número inteiro: "))
 if verificar_primo(num):
     print(num, "é um número primo.")
