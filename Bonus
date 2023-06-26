@@ -1,0 +1,12 @@
+def verificar_palindromo(palavra):
+    tamanho = len(palavra)
+    for i in range(tamanho // 2):
+        if palavra[i] != palavra[tamanho - i - 1]:
+            return False
+    return True
+
+texto = input("Digite uma palavra: ")
+if verificar_palindromo(texto):
+    print(texto, "é um palíndromo.")
+else:
+    print(texto, "não é um palíndromo.")
