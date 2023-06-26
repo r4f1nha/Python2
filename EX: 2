@@ -1,0 +1,15 @@
+def encontrar_maior(lista):
+    maior = None
+    i = 0
+    while i < len(lista):
+        if maior is None or lista[i] > maior:
+            maior = lista[i]
+        i += 1
+    return maior
+
+# Solicitar números ao usuário
+numeros = input("Digite os números separados por espaço: ").split()
+numeros = [int(numero) for numero in numeros]
+
+maior_numero = encontrar_maior(numeros)
+print("O maior número na lista é:", maior_numero)
