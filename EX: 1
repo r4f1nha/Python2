@@ -1,0 +1,12 @@
+def calcular_quadrado(lista):
+    quadrados = []
+    for elemento in lista:
+        quadrado = elemento ** 2
+        quadrados.append(quadrado)
+    return quadrados
+
+numeros = input("Digite os números separados por espaço: ").split()
+numeros = [int(numero) for numero in numeros]
+
+quadrados = calcular_quadrado(numeros)
+print(quadrados)
